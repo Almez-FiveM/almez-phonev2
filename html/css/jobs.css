@@ -1,0 +1,182 @@
+.jobs-app {
+    display: none;
+    height: 110%;
+    width: 100%;
+    background: rgb(243, 243, 243);
+    overflow: hidden;
+}
+
+.jobs-header {
+    position: absolute;
+    width: 100%;
+    height: 12vh;
+    background-color: red;
+    top: 0;
+    border-bottom: .3vh solid #333; 
+    color: rgb(0, 0, 0);
+    font-family: 'Samsung Sans Medium';
+    font-size: 1.8vh;
+}
+
+.jobs-header > p {
+    line-height: 12vh;
+    text-indent: 2vh;
+}
+
+.jobs-header > span {
+    position: absolute;
+    top: 9vh;
+    left: 2vh;
+    font-size: 1.2vh;
+    height: 2vh;
+    color: rgba(0, 0, 0, 0.842);
+}
+
+.jobs2-list {
+    position: absolute;
+    background-color: #00000033;
+    width: 90%;
+    height: 73%;
+
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 3%;
+
+    border-radius: .5vh;
+
+    overflow-y: scroll;
+}
+
+.jobs2-list::-webkit-scrollbar {
+    display: none;
+}
+
+.jobs-list {
+    position: relative;
+    width: 95%;
+    height: 6vh;
+    background-color: rgba(31, 31, 31, 0.89);
+    margin: 2.5%;
+
+    border-radius: .5vh;
+}
+
+.jobs-list-firstletter {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    width: 5.5vh;
+    height: 5.5vh;
+    /* background-color: rgb(133, 14, 10); */
+    text-align: center;
+    left: 0vh;
+    line-height: 3.5vh;
+    border-radius: 50%;
+    font-family: 'Samsung Sans Medium';
+    font-size: 1.8vh;
+
+    color: rgb(255, 255, 255);
+}
+
+.jobs-list-firstletter-worker {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: red;
+    width: 3.5vh;
+    height: 3.5vh;
+    text-align: center;
+    left: 1vh;
+    line-height: 3.5vh;
+    border-radius: 50%;
+    font-family: 'Samsung Sans Medium';
+    font-size: 1.8vh;
+
+    color: rgb(255, 255, 255);
+}
+
+.jobs-list-fullname {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5.5vh;
+    font-family: 'Samsung Sans Medium';
+    font-size: 1.5vh;
+
+    max-width: 14vh;
+
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+
+    color: rgb(255, 255, 255);
+}
+
+.no-jobs {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Samsung Sans Medium';
+    font-size: 1.3vh;
+
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+    max-width: 14vh;
+
+    color: rgb(255, 255, 255);
+}
+
+.jobs-list-company {
+    color: white;
+    position: absolute;
+    top: 25%;
+
+    right: 2vh;
+    font-size: 2vh;
+}
+
+.jobs-list-company:hover {
+    color: red;
+
+    cursor: pointer;
+}
+
+.jobs-list-call {
+    color: white;
+    position: absolute;
+    top: 25%;
+    transform: translateY(-50%);
+
+    right: 2vh;
+    font-size: 2vh;
+    transform: rotate(90deg);
+
+    transition: .08s ease-in-out;
+}
+
+.jobs-list-call:hover {
+    color: red;
+    opacity: .8;
+
+    transform: rotate(0deg);
+
+    cursor: pointer;
+}
+
+.jobs-list-back {
+    color: white;
+    position: absolute;
+
+    right: 2vh;
+    font-size: 2vh;
+}
+
+.jobs-list-back:hover {
+    color: red;
+
+    cursor: pointer;
+}

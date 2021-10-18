@@ -1,0 +1,596 @@
+.settings-app {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background: rgb(230, 230, 230);
+    overflow: hidden;
+}
+
+.settings-app-header {
+    margin-top: 10%;
+    position: relative;
+    padding: 5vh 0 0 1.85vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vh;
+    font-weight: 700;
+}
+
+.settings-app-tab-appereance {
+    position: absolute;
+    top: 12vh;
+    height: 100%;
+    width: 100%;
+}
+
+.settings-app-tab-information {
+    position: absolute;
+    top: 25vh;
+    height: 100%;
+    width: 100%;
+}
+
+.settings-app-tab {
+    position: relative;
+    width: 100%;
+    height: 3.2vh;
+    margin-bottom: none;
+    margin-top: none;
+    /* transition: all .1s; */
+    background-color: white;
+}
+
+
+
+.normalhr{
+    position: relative;
+    height: 3px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    vertical-align: middle;
+    
+}
+
+.normalhr > hr{
+    position: relative;
+    height: 1px;
+    width: 100%;
+    margin-left: 10%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 1px;
+    border-color: rgba(0, 0, 0, 0.17);
+}
+
+.uzunhr{
+    position: relative;
+    height: 1px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.uzunhr > hr{
+    position: relative;
+    height: 1px;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-color: rgba(0, 0, 0, 0.17);
+}
+
+.settings-app-tab-header {
+    position: absolute;
+    top: -2.5vh;
+    height: 2.6vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5vh;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.17);
+    width: 100%;
+}
+
+.settings-app-tab-header > p {
+    padding-left: 1vh;
+}
+
+.settings-tab-icon {
+    position: absolute;
+    left: 1.6vh;
+    top: 0.35vh;
+    font-size: 2.3vh;
+}
+
+.settings-tab-icon-img {
+    position: absolute;
+    width: 2.2vh;
+    height: 2.2vh;
+    border-radius: 10%;
+}
+
+.profilepicture31{
+    position: absolute;
+    top: 7%;
+    width: 5.0vh;
+    height: 5.0vh;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.settings-tab-title {
+    position: absolute;
+    left: 4.6vh;
+    top: 0.55vh;
+    font-size: 1.45vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.settings-tab-description {
+    position: absolute;
+    left: 6.2vh;
+    top: 3.2vh;
+    font-size: 1.2vh;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.settings-background-tab {
+    display: block;
+    position: absolute;
+    top: -100%;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    background: rgb(230, 230, 230);
+}
+
+.settings-profilepicture-tab {
+    display: block;
+    position: absolute;
+    top: -100%;
+    opacity: 100%;
+    height: 100%;
+    width: 100%;
+    left: 10px;
+    right: 10px;
+    background: rgb(230, 230, 230);
+}
+
+@media print {
+    html, body {
+      display: none;  /* hide whole page */
+      visibility:hidden;
+    }
+  }
+
+.darkmode-options {
+    position: absolute;
+    height: 30%;
+    width: 100%;
+    top: 13vh;
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.17);
+    border-top: 1px solid rgba(0, 0, 0, 0.17);
+}
+
+.darkmode-option-title {
+    margin-top: 4px;
+    color: #111111;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5vh;
+    font-weight: 500;
+}
+
+.darkmode-option-current {
+    margin-top: 10px;
+    color: #0e7eff;
+}
+
+.darkmode-option-current > i {
+    font-size: 1.6vh;
+    color: #0e7eff;
+}
+
+.darkmode-option {
+    float: left;
+    position: relative;
+    vertical-align: baseline;
+    width: 50%;
+    height: 80%;
+    vertical-align: middle;
+    text-align: center;
+} 
+
+.background-option-icon {
+    position: absolute;
+    height: 100%;
+    width: 6vh;
+    text-align: center;
+    line-height: 7vh;
+    font-size: 2.3vh;
+    color: #fbc531;
+}
+
+.background-option-title {
+    position: absolute;
+    left: 6vh;
+    top: 1.5vh;
+    text-align: center;
+    font-size: 1vh;
+    color: #030303;
+    font-size: 1.3vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.background-option-description {
+    position: absolute;
+    left: 6vh;
+    top: 3.6vh;
+    text-align: center;
+    font-size: 1vh;
+    color: #030303b9;
+    font-size: 1.1vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.background-option-current {
+    position: absolute;
+    width: 50px;
+    height: 24px;
+    top: 22%;
+    right: -1vh;
+    color: #0e7eff;
+}
+
+.background-option-current > i {
+    font-size: 1.6vh;
+    color: #0e7eff;
+}
+
+.background-buttons {
+    position: absolute;
+    bottom: 0;
+    height: 5vh;
+    width: 100%;
+}
+
+.background-button {
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    line-height: 4.7vh;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5vh;
+    transition: .05s;
+    border-top: 2px solid #e8421800;
+}
+
+.background-button:hover {
+    background-color: #dadbdb;
+    border-top: 2px solid #e84118;
+}
+
+.background-custom {
+    display: none;
+    position: absolute;
+    height: auto;
+    width: 80%;
+    background-color: transparent;
+    margin: 0 auto;
+    top: 62vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+.custom-background-input {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    left: 0;
+    border: none;
+    outline: none;
+    height: 4vh;
+    width: 98%;
+    font-family: 'Poppins', sans-serif;
+    /* profilepicture: rgb(235, 235, 235); */
+    border-radius: 1vh;
+    text-align: center;
+}
+
+.custom-background-input::placeholder {
+    text-align: center;
+}
+
+
+.background-custom-buttons > p {
+    margin: none;
+}
+
+.custom-background-button {
+    background: rgb(255, 255, 255);
+    position: relative;
+    float: left;
+    height: 4vh;
+    width: 100%;
+    text-align: center;
+    line-height: 4.1vh;
+    color: rgb(0, 110, 255);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5vh;
+    transition: .08s;
+}
+
+.custom-background-button:hover {
+    background-color: #dadbdb;
+}
+
+.option-orta-ust{
+    border-top-left-radius: 1vh;
+    border-top-right-radius: 1vh;
+}
+
+.option-orta-alt{
+    border-bottom-left-radius: 1vh;
+    border-bottom-right-radius: 1vh;
+}
+
+.option-enalt{
+    margin-top: 1vh;
+    border-radius: 1vh;
+}
+
+.border-top-option{
+    border-top: 1px solid  rgb(189, 189, 189);
+}
+
+.profilepicture-option-current {
+    position: absolute;
+    width: 50px;
+    height: 24px;
+    top: 22%;
+    right: -1vh;
+    color: #0e7eff;
+}
+
+.profilepicture-option-current > i {
+    font-size: 1.6vh;
+    color: #0e7eff;
+}
+
+
+
+.profilepicture-option-icon {
+    position: absolute;
+    height: 100%;
+    width: 6vh;
+    text-align: center;
+    line-height: 7vh;
+    font-size: 2.3vh;
+    color: #fbc531;
+}
+
+.profilepicture-option-title {
+    position: absolute;
+    left: 6vh;
+    top: 1.5vh;
+    text-align: center;
+    font-size: 1vh;
+    color: #030303;
+    font-size: 1.3vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.profilepicture-option-description {
+    position: absolute;
+    left: 6vh;
+    top: 3.6vh;
+    text-align: center;
+    font-size: 1vh;
+    color: #030303b9;
+    font-size: 1.1vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.profilepicture-option-current {
+    position: absolute;
+    width: 50px;
+    height: 24px;
+    top: 22%;
+    right: -1vh;
+    color: #0e7eff;
+}
+
+
+
+
+/* ------------- */
+
+.profilepicture-buttons {
+    position: absolute;
+    top: 5%;
+    height: 5vh;
+    width: 100%;
+}
+
+.profilepicture-button {
+    position: relative;
+    float: left;
+    height: 100%;
+    left:0;
+    top: 0;
+    width: 20%;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 3%;
+    text-align: center;
+    line-height: 4.7vh;
+    color: rgb(0, 132, 255);
+    font-size: 1.5vh;
+    transition: .05s;
+}
+
+.profilepicture-button:hover {
+    color: rgb(0, 66, 128);
+}
+
+
+.profilepicture-custom {
+    display: none;
+    position: absolute;
+    height: auto;
+    width: 80%;
+    background-color: transparent;
+    margin: 0 auto;
+    top: 62vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+.profilepicture-custom-title {
+    font-family: 'Samsung Sans Bold';
+    padding: 2vh;
+    font-size: 1.5vh;
+    text-align: center;
+}
+
+.custom-profilepicture-input {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    left: 0;
+    border: none;
+    outline: none;
+    height: 4vh;
+    width: 98%;
+    font-family: 'Poppins', sans-serif;
+    /* profilepicture: rgb(235, 235, 235); */
+    border-radius: 1vh;
+    text-align: center;
+}
+
+.custom-profilepicture-input::placeholder {
+    text-align: center;
+}
+
+
+.profilepicture-custom-buttons > p {
+    margin: none;
+}
+
+.custom-profilepicture-button {
+    background: rgb(255, 255, 255);
+    position: relative;
+    float: left;
+    height: 4vh;
+    width: 100%;
+    text-align: center;
+    line-height: 4.1vh;
+    color: rgb(0, 110, 255);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5vh;
+    transition: .08s;
+}
+
+.custom-profilepicture-button:hover {
+    background-color: #dadbdb;
+}
+
+.option-orta-ust{
+    border-top-left-radius: 1vh;
+    border-top-right-radius: 1vh;
+}
+
+.option-orta-alt{
+    border-bottom-left-radius: 1vh;
+    border-bottom-right-radius: 1vh;
+}
+
+.option-enalt{
+    margin-top: 1vh;
+    border-radius: 1vh;
+}
+
+.border-top-option{
+    border-top: 1px solid  rgb(189, 189, 189);
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: absolute;
+    /* display: inline-block; */
+    width: 50px;
+    height: 24px;
+    top: 10%;
+    right: 1.5vh;
+    /* transform: translateY(-50%); */
+}
+
+.okisaret {
+    position: absolute;
+    /* display: inline-block; */
+    width: 50px;
+    height: 24px;
+    top: 22%;
+    right: -2.2vh;
+}
+  
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 2px;
+    top: 2px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: #2196F3;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+  
+/* Rounded sliders */
+.slider.round {
+    border-radius: 24px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}

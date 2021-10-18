@@ -1,0 +1,181 @@
+svg,
+p {
+  pointer-events: none;
+}
+
+.container {
+  width: 375px;
+  height: 667px;
+  box-shadow: 0px 2px 4px 0px rgba(217, 175, 125, 0.2);
+  background-image: url();
+}
+
+.controlIcon {
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+.controlPanel {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 155px 70px 70px 70px;
+  grid-gap: 1rem;
+  margin-top: 9rem;
+  padding: 1.5rem;
+}
+
+.control {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 18px;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+.control--1 {
+  display: grid;
+  grid-gap: 0.85rem;
+  grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+  grid-column: 1/span 2;
+  padding: 0.75rem;
+}
+.control--2 {
+  grid-column: 3/span 2;
+}
+.control--5 {
+  grid-column: 3;
+  grid-row: 2/span 2;
+}
+.control--6 {
+  grid-column: 4;
+  grid-row: 2/span 2;
+}
+.control--7 {
+  grid-column: 1/span 2;
+  grid-row: 3;
+}
+.control--extension {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.connectionButton {
+  border-radius: 50%;
+  border: 0;
+  background-color: #979797;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.125s ease-in-out;
+}
+.connectionButton:hover {
+  background-color: #44bb58;
+}
+.connectionButton.is-active {
+  background-color: #4cd964;
+}
+.connectionButton--blue:hover {
+  background-color: #2b79ce;
+}
+.connectionButton--blue.is-active {
+  background-color: #007aff;
+}
+.connectionButton--orange:hover {
+  background-color: #dc942e;
+}
+.connectionButton--orange.is-active {
+  background-color: #ff9500;
+}
+
+.controlButton {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  transition: background-color 0.125s ease-in-out;
+}
+.controlButton:hover {
+  background-color: #e9e9e9;
+}
+.controlButton:hover > svg > * {
+  fill: #fe6064;
+}
+.controlButton:hover > p {
+  color: #000;
+}
+.controlButton.is-active {
+  background-color: #fff;
+}
+.controlButton.is-active > svg > * {
+  fill: #fe6064;
+}
+.controlButton.is-active > p {
+  color: #000;
+}
+.controlButton--flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.controlButton--flex > p {
+  margin-left: 1rem;
+  font-size: 0.75rem;
+  text-align: left;
+  color: #fff;
+}
+
+.musicPlayer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.musicPlayer__songInfo {
+  margin-bottom: 0.5rem;
+}
+.musicPlayer__songInfo > p {
+  margin: 0.25rem;
+  font-weight: 300;
+}
+.musicPlayer__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.musicPlayer__controls > span {
+  padding: 0.5rem;
+}
+.musicPlayer__controls > span:nth-child(2) {
+  padding: 0.5rem 1rem;
+}
+
+.slider {
+  position: relative;
+  height: 100%;
+}
+.slider:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.slider > svg {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  transform: translateX(50%);
+}
+.slider--50:before {
+  transform: translateY(50%);
+}
+.slider--20:before {
+  transform: translateY(20%);
+}
+.slider--20 > svg {
+  transform: translateX(55%);
+}
