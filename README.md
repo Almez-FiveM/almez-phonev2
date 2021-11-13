@@ -1,5 +1,4 @@
 # almez-phoneV2
-Merhaba dostlarım, bugün benim için yeni bir gün. Yaklaşık 2 yıldır devam ettiğim fivem sektörüne devam etmeme kararı aldım, artık script geliştirmeyeceğim.
 Geçen aylarda leaklenip şifreli halde paylaşılan telefonumu paylaşmak istedim,
 Qbus'ta main.lua bana ait değildir sadece başka bir telefonun üzerinde kendi telefonumu giydirip fonksiyonlarını kendime göre düzenledim,
 ESX sürümü kadar stabil çalışmıyor olabilir. (ESX sürümü de elimdeki son hali mi değil mi emin değilim.)
